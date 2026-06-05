@@ -25,8 +25,8 @@ It generates candidates across all three and lets the data decide.
 ---
 
 ## Architecture
-data/generate_data.py            # Stage 1a — Synthetic order generation
-engine/stage1_clustering.py      # Stage 1b — Geographic demand zone clustering
+# data/generate_data.py            # Stage 1a — Synthetic order generation
+# engine/stage1_clustering.py      # Stage 1b — Geographic demand zone clustering
 engine/stage2_ml_pipeline.py     # Stage 2  — ML model training
 engine/stage3_sourcing_engine.py # Stage 3 — Inference & scoring
 bootstrap.py                     # Runs all stages sequentially
