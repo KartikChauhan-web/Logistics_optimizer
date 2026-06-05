@@ -14,10 +14,10 @@ and recommends the single best path based on cost and delivery reliability.
 
 ## The Three Routing Topologies
 
-| Topology            | Path                         | When It Wins                       |
-| Traditional Echelon | Plant → Warehouse → Customer | Large orders, distant customers    |
-| Direct Plant Bypass | Plant → Customer             | High-value, time-sensitive orders  |
-| Regional Fulfilment | Warehouse → Customer         | When regional stock is available   |
+| Topology            | Path                         | When It Wins                       |<br>
+| Traditional Echelon | Plant → Warehouse → Customer | Large orders, distant customers    |<br>
+| Direct Plant Bypass | Plant → Customer             | High-value, time-sensitive orders  |<br>
+| Regional Fulfilment | Warehouse → Customer         | When regional stock is available   |<br>
 
 The engine does not assume one topology is always right.
 It generates candidates across all three and lets the data decide.
@@ -26,8 +26,8 @@ It generates candidates across all three and lets the data decide.
 
 ## Architecture
 data/generate_data.py            # Stage 1a — Synthetic order generation<br>
-engine/stage1_clustering.py      # Stage 1b — Geographic demand zone clustering
-engine/stage2_ml_pipeline.py     # Stage 2  — ML model training
-engine/stage3_sourcing_engine.py # Stage 3 — Inference & scoring
-bootstrap.py                     # Runs all stages sequentially
-app.py                           # Streamlit dashboard
+engine/stage1_clustering.py      # Stage 1b — Geographic demand zone clustering<br>
+engine/stage2_ml_pipeline.py     # Stage 2  — ML model training<br>
+engine/stage3_sourcing_engine.py # Stage 3 — Inference & scoring<br>
+bootstrap.py                     # Runs all stages sequentially<br>
+app.py                           # Streamlit dashboard<br>
